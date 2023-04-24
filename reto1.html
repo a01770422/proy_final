@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="logo_hbomax.png" rel="shortcut icon" type="image/png">
+		<link href="efectos.css" rel="stylesheet" type="text/css">
+		<title>Inicio de Sesión	HBOMAX</title>
+		<script src="ver_ocultar.js" type="text/JavaScript"></script>
+		<script src="p_validar.js" type="text/JavaScript"></script>
+		<script src="certificado1.js" type="text/JavaScript"></script>
+	</head>
+	<body bgcolor="#540557"><center>
+		<br><br>
+		<h1 class="encabezado">Iniciar sesión </h1>
+		<br><br>
+		<table border="3" width="70%">
+			<form name="f_contra">
+				<tr align="center">
+					<td><p>Indica tu cuenta</p></td>
+					<td><input name="c_cta" type="text" class="campo" maxlength="10" onClick="campos_azules()"></td>
+				</tr>
+				<tr align="center">
+					<td><p>Indica tu contraseña</p></td>
+					<td><input name="c_pass" type="password" class="campo" maxlength="10" onClick="campos_azules()"> 
+						<img src="ojo_abierto.png" width="15" height="15" onClick="mostrar()">
+						<img src="ojo_cerrado.jpg" width="15" height="15" onClick="ocultar()">
+					</td>
+				</tr>
+				<tr align="center">
+					<td><input name="b_envia" type="button" class="boton_azul" value="Enviar" onClick="valida()"></td>
+					<br><a href="index_proy.html"> iniciar</a></br>
+					<td><input name="b_reset" type="reset" class="boton_rojo" value="Reiniciar"></td>
+				</tr>
+				<input name="intentos" type="hidden" value="0">
+			</form>
+		</table>
+	</center></body>
+</html>
+
